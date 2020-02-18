@@ -1,0 +1,352 @@
+@charset "EUC-KR";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div.all{
+	
+}
+
+div.header{
+	position: fixed;
+	width: 100%;
+	left: 330px;
+	height: 100px;
+	background-color: white;
+	z-index: 100;
+}
+div.header ul.topMenu{
+	position: absolute;
+	width: 1300px;
+	display: inline-block;
+	z-index: 1000;
+	background-color: white;
+	margin: 40px 0 0 0;
+}
+div.header ul.topMenu li{
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	letter-spacing: -1px;
+	font-size: 18pt;	
+	transition: margin .4s ease;
+}
+div.header ul.topMenu li:nth-child(1) {width: 20%; text-align: left;}
+div.header ul.topMenu li:nth-child(2) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(3) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(4) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(5) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(6) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(7) {width: 13%; text-align: center;}
+div.header ul.topMenu li a{
+	display: block;
+	/*line-height: 28px;*/
+	text-decoration: none;
+	padding: 0 0 40px 0;
+	color: black;
+	/*-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;*/
+	transition: color .2s ease-in-out;
+	
+}
+div.header ul.topMenu li:hover > a{
+	color: rgb(246, 134, 0);
+	
+}
+div.header ul.topMenu li:nth-child(2):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(3):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(4):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(5):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(6):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(7):hover{
+	margin: -10px 0 0 0;
+}
+
+
+div.header ul.topMenu ul.subMenu{
+	position: relative;
+/*	position: absolute;*/
+	width: 160px;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	/*-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;*/
+	transition: opacity .25s ease .1s;
+}
+div.header ul.topMenu ul.subMenu li{
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	text-align: center;
+	/*-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;*/
+	transition: height .25s ease .1s;
+}
+div.header ul.topMenu li:hover > ul.subMenu li{
+	overflow: visible;
+	padding: 0;
+	margin: 0 0 0 0;
+	height: 25px;
+}
+/*
+div.header ul.topMenu li:hover > ul.subMenu li:last-child{
+	margin: 0 0 100px 0;
+}
+*/
+div.header ul.topMenu ul.subMenu li a{
+	
+}
+div.header ul.topMenu li:hover > ul.subMenu{
+	opacity: 0.7;
+}
+div.header ul.subMenu li:hover < ul.topMenu li a{
+	color: rgb(246, 134, 0);
+}
+
+div.titleline{
+	position: absolute;
+	margin-top: 190px;
+	height:300px;
+	width: 1230px;
+	left: 330px;
+	border-radius: 10px 10px 0 0;
+	background-image: url("slide1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div.titleline div.title{
+	position: absolute;
+	color: white;
+	bottom: 0;
+	font-size: 48px;
+	letter-spacing: -5px;
+	margin: 0 0 15px 15px; 
+}
+
+div.titleline button{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	outline: 0;
+	border: 0;
+	background-color: Transparent;
+	cursor: pointer;
+}
+@keyframes sheen {
+	0% { top: 50px; }
+	50% {  }
+    100% { top: 70px; }
+}
+div.titleline button:hover{
+	animation: 1s sheen ease-in-out infinite; 
+}
+div.noticeline{
+	position: absolute;
+	width:1230px;
+	left: 330px;
+	top: 500px;
+}
+table.view{
+	width: 77%;
+	float: left;
+	height: 810px;
+	border-collapse: collapse;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+table.view td{
+	width: 100%;
+}
+table.view td#date{
+	text-align: right;
+	border-top: 1px solid rgb(250, 250, 250);
+	border-bottom: 1px solid rgb(250, 250, 250);
+	padding: 0 30px 0 0;
+}
+table.view td#contents{
+	padding: 0 0 0 30px;
+}
+table.view th{
+	background-color: rgb(250, 250, 250);
+	text-align: left;
+	font-size: 26px;
+	font-weight: normal;
+	padding: 0 0 0 30px;
+	height: 100px;
+}
+table.view td#list{
+	text-align: right;
+	padding: 0 30px 0 0;
+}
+table.view button#list{
+	width: 80px;
+	height: 40px;
+	cursor: pointer;
+	outline: 0;
+	border: 0;
+	font-size: 18px;
+	color: white;
+	background-color: #2f5597;
+}
+
+
+div.noticeline{
+	position: absolute;
+	left: 330px;
+	width: 1230px;
+	top: 500px;
+}
+div.noticeline div.notice{
+	position:relative;
+	width: 77%;
+	float: left;
+}
+div.noticeline div.notice table{
+	border-top: 1px solid rgb(200,200,200);
+	border-collapse: collapse;
+}
+
+div.noticeline div.notice table td{
+	border-bottom: 1px solid rgb(200,200,200);
+	height: 70px;
+}
+
+div.noticeline div.notice table td a{
+	text-decoration: none;
+}
+div.noticeline div.notice table td#title a{
+	color: black;
+}
+div.noticeline div.notice table tr:hover{
+	background-color: rgb(250, 250, 250);
+}
+div.noticeline div.notice table td#date{
+	color: rgb(130,130,130);	
+}
+div.noticeline div.notice table td#title{
+	width: 884px;
+	
+}
+div.noticeline div.notice table td#date{
+	width: 100px;
+}
+
+div.noticeline div.nav{
+	float: right;
+	width: 250px;
+	height: 710px;
+	border: 1px solid black;
+	background-color: rgb(60,60,60);
+	margin: 30px 0 0 0;
+}
+div.noticeline button#login{
+	position: relative;
+	color: white;
+	width: 252px;
+	height: 70px;
+	font-size: 20px;
+	background-color: rgb(246, 134, 0);
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	float: right;
+}
+div.noticeline button#login1{
+	position: relative;
+	color: white;
+	width: 252px;
+	height: 70px;
+	font-size: 20px;
+	background-color: rgb(246, 134, 0);
+	border: 0;
+	outline: 0;
+	float: right;
+}
+div.noticeline div.nav div.section01{
+	font-size: 36px;
+	padding: 100px 0;
+	text-align: center;
+	border: 5px solid rgb(195,195,195);
+	letter-spacing: -3px;
+	background-color: rgb(60,60,60);
+	color: white;
+	
+}
+
+div.noticeline div.nav ul{
+	height: 357px;
+	background-color: rgb(60,60,60);
+}
+div.noticeline div.nav ul li{
+	list-style: none;
+	margin: 50px 20px 50px 20px;
+	padding: 0 0 15px 0;
+	font-size: 20px;
+	border-bottom: 1px solid rgb(195,195,195);
+}
+div.noticeline div.nav ul li:nth-child(2){
+	border-bottom: 1px solid rgb(246, 134, 0);
+}
+div.noticeline div.nav ul li a{
+	color: rgb(195, 195, 195);
+	text-decoration: none;
+}
+div.noticeline div.nav ul li:nth-child(2) a{
+	color: rgb(246, 134, 0);
+}
+div.noticeline div.nav ul li:hover > a{
+	color: rgb(246, 134, 0);
+}
+div.noticeline div.nav ul li:hover {
+	border-bottom: 1px solid rgb(246, 134, 0);
+}
+div.footer {
+	position: absolute;
+	top: 1500px; 
+	width : 1230px;
+	border-top: 2px solid gray;
+	left: 330px;
+	width: 1230px;
+}
+
+ul.footer {
+	list-style: none;
+	text-align: center;
+	color: gray;
+}
+
+ul.footer li {
+	display: inline;
+}
+
+ul.footer li a {
+	text-decoration: none;
+	color: black;
+}

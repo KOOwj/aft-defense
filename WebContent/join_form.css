@@ -1,0 +1,208 @@
+@charset "EUC-KR";
+
+@charset "EUC-KR";
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+div.all{
+	position: absolute;
+}
+
+div.header{
+	position: absolute;
+	width: 100%;
+	left: 330px;
+	height: 100px;
+	background-color: white;
+	z-index: 100;
+}
+div.header ul.topMenu{
+	position: absolute;
+	width: 1300px;
+	display: inline-block;
+	z-index: 1000;
+	background-color: white;
+	margin: 40px 0 0 0;
+}
+div.header ul.topMenu li{
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	letter-spacing: -1px;
+	font-size: 18pt;	
+	transition: margin .4s ease;
+}
+div.header ul.topMenu li:nth-child(1) {width: 20%; text-align: left;}
+div.header ul.topMenu li:nth-child(2) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(3) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(4) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(5) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(6) {width: 13%; text-align: center;}
+div.header ul.topMenu li:nth-child(7) {width: 13%; text-align: center;}
+div.header ul.topMenu li a{
+	display: block;
+	/*line-height: 28px;*/
+	text-decoration: none;
+	padding: 0 0 40px 0;
+	color: black;
+	/*-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;*/
+	transition: color .2s ease-in-out;
+	
+}
+div.header ul.topMenu li:hover > a{
+	color: rgb(246, 134, 0);
+	
+}
+div.header ul.topMenu li:nth-child(2):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(3):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(4):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(5):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(6):hover{
+	margin: -10px 0 0 0;
+}
+div.header ul.topMenu li:nth-child(7):hover{
+	margin: -10px 0 0 0;
+}
+
+
+div.header ul.topMenu ul.subMenu{
+	position: relative;
+/*	position: absolute;*/
+	width: 160px;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	/*-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;*/
+	transition: opacity .25s ease .1s;
+}
+div.header ul.topMenu ul.subMenu li{
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	text-align: center;
+	/*-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;*/
+	transition: height .25s ease .1s;
+}
+div.header ul.topMenu li:hover > ul.subMenu li{
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+	height: 25px;
+}
+div.header ul.topMenu ul.subMenu li a{
+
+}
+div.header ul.topMenu li:hover > ul.subMenu{
+	opacity: 0.7;
+}
+div.header ul.subMenu li:hover < ul.topMenu li a{
+	color: rgb(246, 134, 0);
+}
+
+
+div.join{
+	position: absolute;
+	top: 180px;
+	background-color: white;
+	width: 1230px;
+	left: 330px;
+	height: 600px;
+	border: 1px solid black;
+}
+
+
+div.join table{
+	margin-left: 350px;
+	margin-top: 50px;
+}
+
+div.join table tr th{
+	height: 80px;
+	width: 500px;
+	font-size: 52px;
+}
+
+div.join table tr td{
+	border: 1px solid black;
+	height: 40px;
+}
+div.join table tr td input{
+	width: 500px;
+	height:40px;
+	outline: 0;
+	font-size: 18px;
+	padding-left: 10px
+}
+/*
+div.join table tr td input#idform{
+	width: 350px;
+}
+*/
+input::placeholder {
+  color: gray;
+}
+
+div.join table tr td input#login{
+	width: 249px;
+	height: 80px;
+	float: left;
+	border: 0;
+	outline: 0;
+	background-color:black;
+	color: white;
+	cursor: pointer;
+	padding:0;
+	font-size: 32px;
+}
+div.join table tr td input#member{
+	width: 249px;
+	height: 80px;
+	float: right;
+	border: 0;
+	outline: 0;
+	background-color:black;
+	color: white;
+	cursor: pointer;
+	padding:0;
+	font-size: 32px;
+}
+div.join table tr td input#overlap{
+	width: 150px;
+	height: 44px;
+	float: right;
+	border: 1;
+	outline: 0;
+	background-color:white;
+	color: black;
+	cursor: pointer;
+	padding-left:0;
+	font-size: 18px;
+}
+

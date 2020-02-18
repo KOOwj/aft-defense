@@ -1,0 +1,29 @@
+Initialize engine version: 5.6.6f2 (6bac21139588)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 620 (ID=0x5916)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   23.20.16.5044
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.351 seconds
+Platform assembly: C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\user\Downloads\webprogram\project\project\WebContent\test_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.032189 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3148 -> priority: 1 
+  Thread -> id: 27a8 -> priority: 1 

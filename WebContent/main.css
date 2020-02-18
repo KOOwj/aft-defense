@@ -1,0 +1,452 @@
+@charset "EUC-KR";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div.all {
+	position: absolute;
+}
+
+div.header {
+	position: fixed;
+	width: 100%;
+	left: 330px;
+	height: 100px;
+	background-color: white;
+	z-index: 100;
+}
+
+div.header ul.topMenu {
+	position: absolute;
+	width: 1300px;
+	display: inline-block;
+	z-index: 1000;
+	background-color: white;
+	margin: 40px 0 0 0;
+}
+
+div.header ul.topMenu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	letter-spacing: -1px;
+	font-size: 18pt;
+	transition: margin .4s ease;
+}
+
+div.header ul.topMenu li:nth-child(1) {
+	width: 20%;
+	text-align: left;
+}
+
+div.header ul.topMenu li:nth-child(2) {
+	width: 13%;
+	text-align: center;
+}
+
+div.header ul.topMenu li:nth-child(3) {
+	width: 13%;
+	text-align: center;
+}
+
+div.header ul.topMenu li:nth-child(4) {
+	width: 13%;
+	text-align: center;
+}
+
+div.header ul.topMenu li:nth-child(5) {
+	width: 13%;
+	text-align: center;
+}
+
+div.header ul.topMenu li:nth-child(6) {
+	width: 13%;
+	text-align: center;
+}
+
+div.header ul.topMenu li:nth-child(7) {
+	width: 13%;
+	text-align: center;
+}
+
+div.header ul.topMenu li a {
+	display: block;
+	/*line-height: 28px;*/
+	text-decoration: none;
+	padding: 0 0 40px 0;
+	color: black;
+	/*-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;*/
+	transition: color .2s ease-in-out;
+}
+
+div.header ul.topMenu li:hover>a {
+	color: rgb(246, 134, 0);
+}
+
+div.header ul.topMenu li:nth-child(2):hover {
+	margin: -10px 0 0 0;
+}
+
+div.header ul.topMenu li:nth-child(3):hover {
+	margin: -10px 0 0 0;
+}
+
+div.header ul.topMenu li:nth-child(4):hover {
+	margin: -10px 0 0 0;
+}
+
+div.header ul.topMenu li:nth-child(5):hover {
+	margin: -10px 0 0 0;
+}
+
+div.header ul.topMenu li:nth-child(6):hover {
+	margin: -10px 0 0 0;
+}
+
+div.header ul.topMenu li:nth-child(7):hover {
+	margin: -10px 0 0 0;
+}
+
+div.header ul.topMenu ul.subMenu {
+	position: relative;
+	/*	position: absolute;*/
+	width: 160px;
+	padding: 0;
+	margin: 0;
+	opacity: 0;
+	/*-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;*/
+	transition: opacity .25s ease .1s;
+}
+
+div.header ul.topMenu ul.subMenu li {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	text-align: center;
+	/*-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;*/
+	transition: height .25s ease .1s;
+}
+
+div.header ul.topMenu li:hover>ul.subMenu li {
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+	height: 25px;
+}
+
+div.header ul.topMenu ul.subMenu li a {
+	
+}
+
+div.header ul.topMenu li:hover>ul.subMenu {
+	opacity: 0.7;
+}
+
+div.header ul.subMenu li:hover < ul.topMenu li a {
+	color: rgb(246, 134, 0);
+}
+
+/* 슬라이드 배너 */
+@keyframes slidy { 
+	0% {left: 0%;}
+	20%{left:0%;}
+	25%{left: -100%;}
+	45%{left:-100%;}
+	50%{left: -200%;}
+	70%{left: -200%;}
+	75%{left: -300%;}
+	95%{left: -300%;}
+	100%{left: 0%;}
+}
+div#slider {
+	position: relative;
+	width: 1230px;
+	height: 400px;
+	margin: 190px 0 0 0;
+	left: 330px;
+	overflow: hidden;
+}
+
+div#slider figure img {
+	width: 20%;
+	float: left;
+	border-radius: 10px 10px 0 0;
+}
+
+div#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	top: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	/*-webkit-animation: 20s slidy ease-in-out infinite;*/
+	animation: 20s slidy ease-in-out infinite;
+}
+
+/* 라인 */
+div.line {
+	position: absolute;
+	width: 1225px;
+	height: 110px;
+	left: 330px;
+	margin: -110px 0 0 0;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.3;
+	border: 1px solid black;
+	z-index:10;
+}
+
+div.line button#left {
+	outline: 0;
+	border: 0;
+	background-color: Transparent;
+	color: rgb(230, 230, 230);
+	font-size: 60px;
+	background-color: Transparent;
+	float: left;
+	cursor: pointer;
+	margin: 10px 0 0 10px;
+}
+
+div.line button#right {
+	outline: 0;
+	border: 0;
+	background-color: Transparent;
+	color: rgb(230, 230, 230);
+	font-size: 60px;
+	background-color: Transparent;
+	float: right;
+	cursor: pointer;
+	margin: 10px 10px 0 0;
+}
+
+/* 스타트 라인 */
+@keyframes sheen { 
+	0% {top: -50px;}
+	50%  {  }
+	100% {top: -30px;}
+}
+div.startline {
+	position: absolute;
+	width: 1230px;
+	height: 150px;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.9;
+	border-radius: 0 0 5px 5px;
+	left: 330px;
+	margin-top: 0px;
+	z-index: 50;
+}
+
+div.startline div.download {
+	position: relative;
+	width: 40%;
+	float: left;
+	height: 150px;
+	/*margin: 0 2.5% 0 0;*/
+	color: white;
+	font-size: 20px;
+	/*padding: 25px 0;*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div.startline div.download a {
+	text-decoration: none;
+	color: white;
+}
+
+div.startline div.start {
+	margin: 0 0 0 10px;
+	position: relative;
+	width: 200px;
+	float: left;
+	height: 150px;
+	z-index: 50;
+}
+
+div.startline div.start button#start {
+	position: relative;
+	outline: 0;
+	border: 0;
+	background-color: Transparent;
+	z-index: 5;
+	cursor: pointer;
+	top: -50px;
+}
+
+div.startline button#start:hover {
+	animation: 1s sheen ease-in-out infinite;
+}
+
+div.startline div.customer {
+	position: relative;
+	width: 40%;
+	float: right;
+	height: 150px;
+	padding: 45px 0 0 0;
+}
+
+div.startline div.customer button#login {
+	position: relative;
+	outline: 0;
+	border: 1px solid rgb(246, 134, 0);
+	border-radius: 3px;
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+	background-color: rgb(246, 134, 0);
+	margin: 0 0 0 35px;
+}
+
+div.startline div.customer button#login1 {
+	position: relative;
+	outline: 0;
+	border: 1px solid rgb(246, 134, 0);
+	border-radius: 3px;
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+	background-color: rgb(246, 134, 0);
+	margin: 0 0 0 35px;
+}
+
+div.startline div.customer button#join {
+	position: relative;
+	outline: 0;
+	border: 1px solid #2f5597;
+	border-radius: 3px;
+	cursor: pointer;
+	color: white;
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+	background-color: #2f5597;
+}
+
+/* 섹션 라인 */
+div.sectionline {
+	position: absolute;
+	width: 1230px;
+	left: 330px;
+	margin-top: 220px;
+}
+
+div.section01 {
+	border: 1px solid rgb(246, 134, 0);
+	border-radius: 5px;
+	position: relative;
+	float: left;
+	width: 60%;
+	height: 300px;
+}
+
+div.section01 ul.notice {
+	border-bottom: 1px solid rgb(246, 134, 0);
+	border-radius: 5px;
+	padding: 15px 0 15px 15px;
+	font-size: 16px;
+}
+
+div.sectionline span {
+	float: right;
+	margin: 0 15px 0 0;
+}
+
+div.section01 li {
+	margin: 0 0 0 15px;
+	padding: 15px 0;
+	list-style: none;
+}
+
+div.sectionline a {
+	text-decoration: none;
+	color: black;
+}
+
+div.section02 {
+	margin: 0 0 0 20px;
+	border: 1px solid #2f5597;
+	border-radius: 5px;
+	position: relative;
+	float: right;
+	width: 35%;
+	height: 300px;
+}
+
+div.section02 ul.ranking {
+	border-bottom: 1px solid #2f5597;
+	border-radius: 5px;
+	padding: 15px 0 15px 15px;
+	font-size: 16px;
+}
+
+div.section02 table.rk {
+	margin-top: 20px;
+}
+
+div.section02 table.rk td#tnsdnl {
+	width: 60px;
+	height: 30px;
+	text-align: center;
+}
+
+div.section02 table.rk td#dkdlel {
+	width: 150px;
+}
+
+div.section02 table.rk td#ch {
+	width: 100px;
+}
+
+div.section02 li span#num {
+	float: left;
+	margin: 0 10px;
+}
+
+div.footer {
+	position: absolute;
+	top: 1300px; 
+	width : 1230px;
+	border-top: 2px solid gray;
+	left: 330px;
+	width: 1230px;
+}
+
+ul.footer {
+	list-style: none;
+	text-align: center;
+	color: gray;
+}
+
+ul.footer li {
+	display: inline;
+}
+
+ul.footer li a {
+	text-decoration: none;
+	color: black;
+}
